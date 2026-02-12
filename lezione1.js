@@ -21,12 +21,11 @@
 
 //VAR
 var colore; //dischiarazione
-colore = "rosso"; //assegnazione
+colore = "red"; //assegnazione
 console.log(colore);
 var colore = "rosso"; //dichiarazione e assegnazione assieme
 var colore = "blu"; // è possibile riassegnare il valore, sono accessibili globalmente e richiamate dopo l'assegnazione daranno semplicemente undefined
 console.log(colore);
-
 
 // LET
 let nome = "Mario";
@@ -44,7 +43,6 @@ const numero = 3.14; // ctrl + ù per commentare rapidamente
 // const numero non è possibile
 // numero = 5  non è possibile
 // numero = 3.15; // Questo darà un errore dal  momento che non posso riassegnare il valore
-
 
 //RECAP
 
@@ -64,7 +62,7 @@ var si | let no | const no
 
 */
 
-//Tipi di dato 
+//Tipi di dato
 //Ad ogni variabile è associato un tipo di dato, che indica la natura del valore che essa può contenere. I tipi di dati in JavaScript possono essere suddivisi in due categorie principali: tipi primitivi e tipi di oggetto. I tipi primitivi rappresentano valori semplici e immutabili, mentre i tipi di oggetto rappresentano strutture dati più complesse che possono contenere proprietà e metodi.
 
 //Primitivi
@@ -86,11 +84,10 @@ let c; //undefined è una variabile che è stata dichiarata ma non ha ancora un 
 
 let i = null; // null è l'assenza intenzionale di qualsiasi valore
 
-
 //Conversione tra i Tipi
 //Delle volte può essere necessario convertire un valore da un tipo di dato a un altro. JavaScript fornisce diverse funzioni per eseguire queste conversioni, come String(), Number() e Boolean().
 
-let num = 1;
+let num = 2;
 let numToStr = String(num); // mi restituisce una stringa "1"
 
 let str = "23";
@@ -101,6 +98,9 @@ let f = Boolean(0); // mi restituisce un booleano false
 
 let sumByType = "5" + 1; // restituisce una stringa "51"
 let operationByType = "5" - 1; // restituisce un numero 4
+
+console.log(sumByType);
+console.log(operationByType);
 
 //Operatori di Confronto
 //Spesso è necessario confrontare due valori per verificare se sono uguali, diversi, maggiori o minori. JavaScript fornisce una serie di operatori di confronto che ci permettono di fare queste verifiche. Gli operatori di confronto restituiscono sempre un **valore booleano** (true o false) in base al risultato del confronto.
@@ -183,7 +183,7 @@ if (eta >= 18) {
 
 //Possiamo anche concatenare condizioni diverse
 
-let voto = 85;
+let voto = 60;
 if (voto >= 90) {
   console.log("Ottimo");
 } else if (voto >= 70) {
@@ -199,7 +199,7 @@ eta = 22;
 let isStudente = 30;
 
 if (eta >= 18) {
-  if (isStudente) {
+  if ("trenta" == "trEnta") {
     console.log("Sconto per studenti");
   } else {
     console.log("Nessuno sconto");
