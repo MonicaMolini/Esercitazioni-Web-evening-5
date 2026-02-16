@@ -265,3 +265,26 @@ let datalocale = data.toLocaleString();
 
 console.log(data);
 console.log(datalocale);
+
+//Le callback
+
+// Le callback sono essenzialmente funzioni che vengono passate come argomenti ad altre funzioni e vengono eseguite all'interno di quelle funzioni. Le callback sono spesso utilizzate per gestire operazioni asincrone, ma possono essere utilizzate anche in contesti sincroni come questo esempio:
+
+function eseguiCallback(callback) {
+  // La funzione eseguiCallback accetta una funzione di callback come argomento
+  console.log("Esecuzione della funzione principale...");
+  callback(); // Esegue la funzione di callback
+}
+
+function miaCallback() {
+  // La funzione miaCallback è la funzione di callback che verrà passata a eseguiCallback
+  console.log("Esecuzione della callback!");
+}
+
+eseguiCallback(miaCallback); // Passa miaCallback come argomento a eseguiCallback, che la eseguirà al suo interno
+
+//La funzione miaCallback aspetta di essere eseguita all'interno della funzione eseguiCallback, che la chiama dopo aver stampato un messaggio. Quando eseguiamo eseguiCallback(miaCallback), vedremo prima il messaggio "Esecuzione della funzione principale..." e poi "Esecuzione della callback!".
+
+//il concetto di callback è fondamentale in JavaScript, soprattutto quando si lavora con operazioni asincrone, poiché consente di gestire il flusso di esecuzione in modo più efficiente e di evitare blocchi del programma durante l'attesa di risultati da operazioni che richiedono tempo.
+
+//Tuttavia, lo vedremo più avanti, il metodo delle callback può portare a quello che viene chiamato "callback hell", ovvero una situazione in cui le callback sono annidate in modo eccessivo, rendendo il codice difficile da leggere e mantenere. Per evitare questo problema, si possono utilizzare altre tecniche come le Promises o le async/await, che offrono un modo più pulito e gestibile per lavorare con operazioni asincrone.
