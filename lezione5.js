@@ -34,7 +34,7 @@ console.log(numbers);
 
 //Vale anche per gli oggetti
 const person = { nome: "Monica", age: 31 };
-const { nome, age } = person;
+const { age, nome } = person;
 // const nome = person.nome
 console.log(nome); // Monica
 console.log(age); // 31
@@ -97,7 +97,7 @@ function print({ nome = "anonimo", eta = 18, paese = "italia" }) {
 //   console.log(`Nome: ${ogg.nome} eta: ${ogg.eta}`);
 // }
 
-const personaFunc = { nome: "Monica", eta: 31 };
+const personaFunc = { nome: "Monica", eta: 31, paese: "Francia" };
 
 print(personaFunc);
 
@@ -183,4 +183,4 @@ console.log(mergedPerson); // { nome: 'Monica', eta: 31, paese: 'Italia', citta:
 const copiedPerson = { ...personFirst }; // Crea una copia dell'oggetto cosa che non è possibile fare con l'assegnazione diretta
 copiedPerson.nome = "Francesca"; // Modifica la copia senza influenzare l'originale
 copiedPerson.eta = 31; // Modifica la copia senza influenzare l'originale
-console.log(copiedPerson); // { nome: 'Monica', eta: 31 }
+console.log(copiedPerson); // { nome: 'Francesca', eta: 31 }

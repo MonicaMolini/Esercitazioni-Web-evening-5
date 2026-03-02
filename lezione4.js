@@ -132,7 +132,7 @@ console.log(somma); // 15
 
 const concat = nomi.reduce(
   (acc, cur, n) => acc + "-" + cur + (93 + n + 1), //n è l'indice dell'elelemento su cui stiamo iterando
-  "Paolo93",
+  "Paolo93"
 );
 //1 acc="Paolo93" + cur="Mario" + 93 + n=0 + 1 = "Paolo93-Mario94"
 //2 acc="Paolo93-Mario94" + cur="Luca" + 93 + n=1 + 1 = "Paolo93-Mario94-Luca95"
@@ -153,7 +153,7 @@ const conteggioOccorrenze = frutti.reduce((acc, cur) => {
   //In questo modo, alla fine del ciclo, acc conterrà un oggetto con le chiavi corrispondenti ai frutti e i valori corrispondenti al numero di volte che quel frutto appare nell'array.
   return acc;
 }, {}); // All'inizio, acc è un oggetto vuoto {}, ad ogni interazione viene aggiunto una chiave che corrisponde al frutto presente nell'array, e come valore quante volte viene ripetuto(partendo da zero e incrementando ad ogni interazione il valore di 1).
-console.log(conteggioOccorrenze); //{ mela: 1, banana: 2, arancia: 1 }
+console.log(conteggioOccorrenze); //{ mela: 2, banana: 2, arancia: 1 }
 
 //Ancora associato ad array di oggetti:
 
