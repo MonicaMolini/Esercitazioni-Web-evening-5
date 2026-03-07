@@ -17,7 +17,9 @@ function numberExists(number, array) {
 
 // 5. Istanzia una classe chiamata "Persona" che abbia come proprietà name, surname, age, hairColor, eyesColor, hobbies ( array di stringhe ) e un metodo chiamato "introduce" che restituisca una stringa con le informazioni della persona. Crea un'istanza della classe e invoca il metodo introduce.
 
-// 7. Prova a duplicare l'oggetto dell'esercizio precedente senza istanziarlo nuovamente. Spiega il metodo che hai scelto e quali sono i suoi vantaggi.
+// 6. Prova a duplicare l'oggetto dell'esercizio precedente senza istanziarlo nuovamente. Spiega il metodo che hai scelto e quali sono i suoi vantaggi.
+
+// 7. Crea una funzione "mergeArray" che accetti come parametri due array e restituisca un nuovo array che contenga tutti gli elementi dei due array, senza modificare i due array originali. Assicurati che nel merge non ci siano elementi duplicati. Spiega il metodo che hai scelto per risolvere l'esercizio.
 
 // 8. Dato il seguente array di oggetti, crea una funzione  "login" che accetti come parametro un username o email, e una password e verifichi se esiste un utente con quelle credenziali. Se esiste, restituisci il messaggio "Login effettuato con successo", altrimenti restituisci "Credenziali non valide".
 
